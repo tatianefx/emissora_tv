@@ -1,0 +1,22 @@
+<h1>Criar Cliente</h1>
+
+<%= form_for @cliente do |f| %>
+	<p>
+		<%= f.label :codigo %>
+		<%= f.text_field :codigo_cli %>
+	</p>
+	<p>
+		<%= f.label :nome %>
+		<%= f.text_field :nome_cli %>
+	</p>
+	<p>
+		<%= f.label :endereco %>
+		<%= f.text_field :endereco_cli %>
+	</p>
+	<p>
+		<%= f.label :telefone %>
+		<%= f.text_field :telefone_cli %>
+	</p>
+	   
+	<p><%= f.submit %></p>
+<% end %> 

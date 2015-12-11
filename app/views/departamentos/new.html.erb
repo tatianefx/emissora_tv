@@ -1,10 +1,11 @@
 <h1>Criar Departamento</h1>
 
 <%= form_for @departamento do |f| %>
-	<p><%= f.label :codigo_dep %>
-	<%= f.text_field :codigo_dep %></p>
-	<%= f.label :nome_dep %>
-	<%= f.text_field :nome_dep %>
-
+	<p>
+		<%= f.label :codigo %>
+		<%= f.text_field :codigo_dep %>
+	</p>
+		<%= f.label :nome %>
+		<%= f.text_field :nome_dep %>
 	<p><%= f.submit %></p>
 <% end %> 

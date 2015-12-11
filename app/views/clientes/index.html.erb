@@ -1,0 +1,24 @@
+<div class="panel panel-default">
+  <div class="panel-heading">CLIENTES</div>
+	<table  class="table table-hover">
+  	<tr>
+    	<th>codigo_cli</th>
+    	<th>nome_cli</th>
+      <th>endereco_cli</th>
+      <th>telefone_cli</th>
+  	</tr>
+ 
+	<% @clientes.each do |cliente| %>
+  	<tr>
+    	<td><%= cliente.codigo_cli %></td>
+    	<td><%= cliente.nome_cli %></td>
+      <td><%= cliente.endereco_cli %></td>
+      <td><%= cliente.telefone_cli %></td>
+  	</tr>
+	<% end %>
+</table>
+</div>
+
+
+
+<%= link_to 'Criar cliente', new_cliente_path %> 

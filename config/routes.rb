@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   resources :departamentos, only: [:index, :create, :new]
+  resources :clientes, only: [:index, :create, :new]
 
    get '/', to: 'home#index'
 
