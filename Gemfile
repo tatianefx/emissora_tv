@@ -41,4 +41,4 @@ gem 'spring',        group: :development
 # Access an IRB console on exception pages or by using <%= console %> in views
 gem 'web-console', '~> 2.0',			group: :development
 
-ruby '2.1.5'
+ruby '2.2.0'
