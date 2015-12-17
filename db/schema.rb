@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 0) do
 
   create_table "auditorio", primary_key: "codigo_aud", force: true do |t|
     t.string  "tipo",             limit: 30
-    t.integer "cod_apresentador"
+    t.integer "cod_apresentador",            null: false
   end
 
   create_table "bem", primary_key: "codigo_bem", force: true do |t|
@@ -49,10 +49,6 @@ ActiveRecord::Schema.define(version: 0) do
     t.date    "data_nasc_dependente"
   end
 
-  create_table "dirige", primary_key: "cod_diretor", force: true do |t|
-    t.integer "cod_prog", null: false
-  end
-
   create_table "exibe_propaganda", primary_key: "cod_cli", force: true do |t|
     t.integer "cod_prog",                        null: false
     t.string  "descricao_propaganda", limit: 60
@@ -66,15 +62,16 @@ ActiveRecord::Schema.define(version: 0) do
 
   create_table "funcionario", primary_key: "codigo_fun", force: true do |t|
     t.string  "nome_fun",      limit: 50, null: false
-    t.string  "cpf_fun",       limit: 11
+    t.string  "cpf_fun",       limit: 14
     t.date    "data_nasc_fun"
     t.float   "salario_fun"
+    t.string  "sexo",          limit: 1
     t.integer "cod_dep"
   end
 
   create_table "jornal", primary_key: "codigo_jornal", force: true do |t|
     t.string  "tipo_jornal", limit: 20
-    t.integer "cod_ancora"
+    t.integer "cod_ancora",             null: false
   end
 
   create_table "jornalista", primary_key: "codigo_jor", force: true do |t|
@@ -88,14 +85,16 @@ ActiveRecord::Schema.define(version: 0) do
 
   create_table "programa", primary_key: "codigo_prog", force: true do |t|
     t.string  "nome_prog",          limit: 50, null: false
-    t.string  "dia_prog",           limit: 10
+    t.string  "dia_prog",           limit: 80
     t.time    "horario_prog"
     t.string  "classificacao_prog", limit: 30
-    t.integer "cod_dep"
+    t.integer "cod_dep",                       null: false
+    t.integer "cod_diretor",                   null: false
   end
 
   create_table "reproduz", primary_key: "cod_prog", force: true do |t|
-    t.integer "cod_filme", null: false
+    t.integer "cod_filme",       null: false
+    t.date    "data_reproducao", null: false
   end
 
   create_table "serie", primary_key: "codigo_serie", force: true do |t|

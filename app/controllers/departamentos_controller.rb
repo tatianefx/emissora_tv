@@ -16,8 +16,8 @@ class DepartamentosController < ApplicationController
   def new
   	@departamento = Departamento.new
   end
-
+  
   def departamento_params
-  	params.require(:departamento).permit(:codigo_dep, :nome_dep)
+    params.require(:departamento).permit(:codigo_dep, :nome_dep)
   end
 end

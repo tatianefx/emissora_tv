@@ -17,6 +17,8 @@ class ClientesController < ApplicationController
   	@cliente = Cliente.new
   end
 
+  private
+
   def cliente_params
   	params.require(:cliente).permit(:codigo_cli, :nome_cli, :endereco_cli, :telefone_cli)
   end

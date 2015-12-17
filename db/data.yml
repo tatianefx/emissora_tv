@@ -1,0 +1,979 @@
+
+---
+tecnico:
+  columns:
+  - codigo_tec
+  - formacao_tec
+  records: 
+  - - '278'
+    - Administrativo
+  - - '1671'
+    - Administrativo
+  - - '1911'
+    - Eletronico
+  - - '2009'
+    - Audio-Visual
+  - - '2410'
+    - Administrativo
+  - - '2600'
+    - Limpeza
+  - - '3298'
+    - Comunicacao
+  - - '3321'
+    - Informatica
+  - - '3462'
+    - Comunicacao
+  - - '3666'
+    - Informatica
+
+---
+jornalista:
+  columns:
+  - codigo_jor
+  - especialidade_jor
+  records: 
+  - - '123'
+    - Criminal
+  - - '398'
+    - Politica
+  - - '622'
+    - Cinegrafista
+  - - '860'
+    - Esportivo
+  - - '1120'
+    - Edicao
+  - - '1320'
+    - Redacao
+  - - '1507'
+    - Redacao
+  - - '1570'
+    - Reportagem
+  - - '2700'
+    - Esportivo
+  - - '2880'
+    - Redacao
+  - - '3599'
+    - Edicao
+
+---
+jornal:
+  columns:
+  - codigo_jornal
+  - tipo_jornal
+  - cod_ancora
+  records: 
+  - - '1242'
+    - Esportivo
+    - '622'
+  - - '2341'
+    - Noticiario
+    - '123'
+  - - '3564'
+    - Esportivo
+    - '622'
+  - - '7893'
+    - Noticiario
+    - '123'
+
+---
+serie:
+  columns:
+  - codigo_serie
+  - nro_episodios
+  - temporada
+  - data_inicio_serie
+  - data_fim_serie
+  records: 
+  - - '4864'
+    - '13'
+    - '3'
+    - '2015-12-13'
+    - '2016-01-13'
+
+---
+auditorio:
+  columns:
+  - codigo_aud
+  - tipo
+  - cod_apresentador
+  records: 
+  - - '2323'
+    - Entrevistas
+    - '1611'
+  - - '6431'
+    - Humor, Danca, Entrevistas
+    - '6666'
+
+---
+funcionario:
+  columns:
+  - codigo_fun
+  - nome_fun
+  - cpf_fun
+  - data_nasc_fun
+  - salario_fun
+  - sexo
+  - cod_dep
+  records: 
+  - - '123'
+    - BETH DA SILVA
+    - 756.240.765-76
+    - '1982-07-22'
+    - '4000'
+    - F
+    - '830'
+  - - '278'
+    - JORGE BRITO
+    - 153.148.986-91
+    - '1960-09-15'
+    - '1000'
+    - M
+    - '310'
+  - - '398'
+    - EDMAR CAMARGO
+    - 344.612.200-10
+    - '1990-12-02'
+    - '1500'
+    - M
+    - '830'
+  - - '468'
+    - PAULO SOUSA
+    - 912.190.685-86
+    - '1987-12-30'
+    - '5000'
+    - M
+    - '871'
+  - - '561'
+    - LIVIO FIGUEIRAS
+    - 425.819.556-19
+    - '1980-01-25'
+    - '2785'
+    - M
+    - '100'
+  - - '622'
+    - LUCIA CAMATA
+    - 852.247.636-57
+    - '1995-03-03'
+    - '2000'
+    - F
+    - '830'
+  - - '794'
+    - JOSY OLIVEIRA
+    - 803.851.524-26
+    - '1989-05-15'
+    - '3250'
+    - F
+    - '720'
+  - - '860'
+    - SUSANA OLIVEIRA
+    - 384.334.554-60
+    - '1973-08-11'
+    - '1900'
+    - F
+    - '240'
+  - - '990'
+    - RENATO SANTIAGO
+    - 376.055.092-43
+    - '1975-10-21'
+    - '2500'
+    - M
+    - '870'
+  - - '1120'
+    - SEBASTIO CORREIA
+    - 561.705.524-09
+    - '1990-06-12'
+    - '1985'
+    - M
+    - '250'
+  - - '1210'
+    - RODOLFO BASTOS
+    - 704.278.884-25
+    - '1991-02-27'
+    - '2990'
+    - M
+    - '870'
+  - - '1320'
+    - ANA FARIAS
+    - 553.738.523-68
+    - '1997-03-10'
+    - '4250'
+    - F
+    - '830'
+  - - '1430'
+    - MAURICIO FELIX
+    - 486.671.292-91
+    - '1993-05-01'
+    - '2785'
+    - M
+    - '100'
+  - - '1507'
+    - CESAR JUNIOR
+    - 976.182.256-08
+    - '1989-03-26'
+    - '3900'
+    - M
+    - '720'
+  - - '1570'
+    - FLAVIO CESAR TORRES
+    - 976.282.256-08
+    - '1989-02-06'
+    - '1900'
+    - M
+    - '720'
+  - - '1611'
+    - FATIMA BERNARDES
+    - 546.475.630-79
+    - '1975-01-14'
+    - '3000'
+    - F
+    - '282'
+  - - '1671'
+    - JONAS ALBUQUERQUE
+    - 546.474.630-79
+    - '1995-12-04'
+    - '2000'
+    - M
+    - '280'
+  - - '1711'
+    - JOAO SANTOS OLIVEIRA
+    - 872.337.282-67
+    - '1990-03-22'
+    - '2780'
+    - M
+    - '282'
+  - - '1810'
+    - JOAO SANTOS SILVA
+    - 489.839.514-78
+    - '1989-11-17'
+    - '2650'
+    - M
+    - '282'
+  - - '1911'
+    - CARLOS VIEIRA
+    - 395.076.676-60
+    - '1970-01-19'
+    - '2490'
+    - M
+    - '280'
+  - - '2009'
+    - JOSE FELISBERTO
+    - 521.667.644-95
+    - '1955-04-30'
+    - '1800'
+    - M
+    - '250'
+  - - '2113'
+    - JONAS SILVA
+    - 442.288.176-02
+    - '1976-05-28'
+    - '2300'
+    - M
+    - '200'
+  - - '2240'
+    - ANTONIO MORAIS
+    - 568.182.135-88
+    - '1965-10-25'
+    - '9500'
+    - M
+    - '871'
+  - - '2350'
+    - MAURICIO SERRA
+    - 217.317.987-09
+    - '1969-11-13'
+    - '2930'
+    - M
+    - '250'
+  - - '2410'
+    - JOSIAS DA SILVA
+    - 852.669.511-84
+    - '1996-01-12'
+    - '870'
+    - M
+    - '310'
+  - - '2520'
+    - FELIPE NASCIMENTO
+    - 785.314.626-49
+    - '1982-12-12'
+    - '4600'
+    - M
+    - '871'
+  - - '2600'
+    - MARCOS FARIAS
+    - 420.128.272-41
+    - '1990-02-26'
+    - '800'
+    - M
+    - '310'
+  - - '2700'
+    - MONICA DA SILVA
+    - 587.745.170-74
+    - '1977-09-24'
+    - '1600'
+    - F
+    - '240'
+  - - '2880'
+    - SAMANTA DE OLIVEIRA
+    - 433.819.227-50
+    - '1988-01-10'
+    - '3600'
+    - F
+    - '240'
+  - - '2956'
+    - Alexsandro Santos Soares
+    - 858.712.183-93
+    - '1975-10-01'
+    - '2300'
+    - M
+    - '282'
+  - - '3068'
+    - Ana Claudia Martinez
+    - 142.062.524-16
+    - '1959-01-18'
+    - '3550'
+    - F
+    - '282'
+  - - '3178'
+    - Anderson Rodrigues dos Santos
+    - 476.147.858-60
+    - '1967-10-27'
+    - '1750'
+    - M
+    - '870'
+  - - '3298'
+    - Andre Ricardo Backes
+    - 226.066.832-18
+    - '1970-04-18'
+    - '2980'
+    - M
+    - '720'
+  - - '3321'
+    - Anilton Joaquim da Silva
+    - 667.053.520-19
+    - '1969-05-16'
+    - '3600'
+    - M
+    - '280'
+  - - '3462'
+    - Autran Macedo
+    - 670.376.638-08
+    - '1988-12-11'
+    - '4150'
+    - M
+    - '200'
+  - - '3599'
+    - Bruno Augusto Nassif Travencolo
+    - 937.480.823-47
+    - '1992-11-12'
+    - '2200'
+    - M
+    - '250'
+  - - '3666'
+    - Carlos Roberto Lopes
+    - 377.016.281-18
+    - '1992-11-25'
+    - '2000'
+    - M
+    - '250'
+  - - '6666'
+    - FAUSTO SILVA
+    - 346.575.230-79
+    - '1975-07-24'
+    - '5000'
+    - M
+    - '282'
+
+---
+dependente:
+  columns:
+  - nome_dependente
+  - cod_fun
+  - data_nasc_dependente
+  records: 
+  - - ALGUSTO ALBUQUERQUE
+    - '1671'
+    - '2014-09-25'
+  - - ANA MARIA DA SILVA
+    - '123'
+    - '2012-06-12'
+  - - CAMILA CESAR TORRES
+    - '1570'
+    - '2000-03-05'
+  - - FLÁVIA BRITO
+    - '278'
+    - '2015-02-12'
+  - - JEFFERSON ALBUQUERQUE
+    - '1671'
+    - '2011-04-15'
+  - - JOÃO BERNARDES
+    - '1611'
+    - '2010-07-02'
+  - - MARIANA DA SILVA
+    - '123'
+    - '1999-04-20'
+  - - MIGUEL BRITO
+    - '278'
+    - '2010-05-01'
+  - - PAULO BERNARDES
+    - '1611'
+    - '2013-08-10'
+  - - PEDRO ALBUQUERQUE
+    - '1671'
+    - '2003-08-14'
+
+---
+cliente:
+  columns:
+  - codigo_cli
+  - nome_cli
+  - endereco_cli
+  - telefone_cli
+  records: 
+  - - '110'
+    - Burger King
+    - RUA CAIAPO, 13, CURITIBA-PR
+    - 3512-7649
+  - - '130'
+    - Colgate
+    - RUA DA PRAIA, 234,SALVADOR-BA
+    - 3456-8900
+  - - '157'
+    - Microsoft
+    - TV. MORAES, 230,LONDRINA-PR
+    - 34811-1000
+  - - '180'
+    - Sony
+    - AV.BEIRA MAR, 1256, FLORIANPOLIS-SC
+    - 3788-8880
+  - - '222'
+    - Netflix
+    - R.ITABIRA, 123 - LOJA 9, BELO HORIZONTE-MG
+    - 3152-1393
+  - - '234'
+    - Nestle
+    - QUADRA 3, BL.3 - SL.2,BRASLIA-DF
+    - 3768-8110
+  - - '260'
+    - Heineken
+    - R.LOPES MENDES, 200, NITERI-RJ
+    - 3217-5885
+  - - '272'
+    - Coca-Cola
+    - AV. CLIMERIO, 230, SAO PAULO-SP
+    - 3248-5211
+  - - '290'
+    - Dell
+    - R.MEIRELES, 200, SAO PAULO-SP
+    - 3251-1410
+  - - '720'
+    - Nintendo
+    - RUA 17 , N.19, NITEROI-RJ
+    - 3113-2310
+
+---
+exibe_propaganda:
+  columns:
+  - cod_cli
+  - cod_prog
+  - descricao_propaganda
+  - valor_propaganda
+  records: 
+  - - '110'
+    - '6431'
+    - contrato de 1 ano, duracao 1 minuto
+    - '10245.85'
+  - - '130'
+    - '2323'
+    - contrato de 2 ano, duracao 1 minuto
+    - '32000.87'
+  - - '157'
+    - '2341'
+    - contrato de 1 ano, duracao 1 minuto
+    - '12456.22'
+  - - '180'
+    - '4864'
+    - contrato de 2 ano, duracao 1 minuto
+    - '32324.32'
+  - - '222'
+    - '1231'
+    - contrato de 10 ano, duracao 1 minuto
+    - '85111.34'
+  - - '234'
+    - '3354'
+    - contrato de 6 ano, duracao 1 minuto
+    - '64345.23'
+  - - '260'
+    - '7893'
+    - contrato de 5 ano, duracao 1 minuto
+    - '23455.89'
+  - - '272'
+    - '5998'
+    - contrato de 1 ano, duracao 1 minuto
+    - '12500.43'
+  - - '272'
+    - '3354'
+    - contrato de 2 ano, duracao 1 minuto
+    - '43456.75'
+  - - '290'
+    - '1242'
+    - contrato de 1 ano, duracao 1 minuto
+    - '12334.45'
+  - - '720'
+    - '1231'
+    - contrato de 3 ano, duracao 1 minuto
+    - '45323.23'
+
+---
+novela:
+  columns:
+  - codigo_novela
+  - data_inicio_nov
+  - data_fim_nov
+  records: 
+  - - '3354'
+    - '1995-04-24'
+    - 
+  - - '5998'
+    - '2015-04-03'
+    - '2016-02-10'
+
+---
+artista:
+  columns:
+  - codigo_art
+  - tipo_artista
+  records: 
+  - - '468'
+    - Drama
+  - - '990'
+    - Duble
+  - - '1210'
+    - Duble
+  - - '1611'
+    - Apresentador
+  - - '1711'
+    - Duble
+  - - '1810'
+    - Drama
+  - - '2113'
+    - Comedia
+  - - '2350'
+    - Infantil
+  - - '2956'
+    - Infantil
+  - - '3068'
+    - Drama
+  - - '3178'
+    - Comedia
+  - - '6666'
+    - Apresentador
+
+---
+atua:
+  columns:
+  - cod_novela
+  - cod_ator
+  records: 
+  - - '3354'
+    - '990'
+  - - '3354'
+    - '1711'
+  - - '3354'
+    - '2350'
+  - - '3354'
+    - '2956'
+  - - '3354'
+    - '3178'
+  - - '5998'
+    - '1210'
+  - - '5998'
+    - '1711'
+  - - '5998'
+    - '1810'
+  - - '5998'
+    - '2113'
+  - - '5998'
+    - '3068'
+
+---
+programa:
+  columns:
+  - codigo_prog
+  - nome_prog
+  - dia_prog
+  - horario_prog
+  - classificacao_prog
+  - cod_dep
+  - cod_diretor
+  records: 
+  - - '1231'
+    - Tela Quente
+    - segunda
+    - '22:30:00'
+    - 16 anos
+    - '870'
+    - '1507'
+  - - '1242'
+    - Auto Esporte
+    - domingo
+    - '09:10:00'
+    - Livre
+    - '240'
+    - '860'
+  - - '2323'
+    - Encontro com Fatima Bernardes
+    - segunda, terca, quarta, quinta, sexta
+    - '10:50:00'
+    - Livre
+    - '282'
+    - '1611'
+  - - '2341'
+    - Jornal Nacional
+    - segunda, terca, quarta, quinta, sexta, sabado
+    - '20:30:00'
+    - 12 anos
+    - '830'
+    - '2880'
+  - - '3354'
+    - Malhacao
+    - segunda, terca, quarta, quinta, sexta
+    - '17:47:00'
+    - 12 anos
+    - '282'
+    - '3068'
+  - - '3564'
+    - Globo Esporte
+    - segunda, terca, quarta, quinta, sexta, sabado
+    - '12:47:00'
+    - Livre
+    - '240'
+    - '2700'
+  - - '4864'
+    - Under the Dome
+    - segunda, terca, quarta, quinta, sexta, sabado
+    - '01:22:00'
+    - 18 anos
+    - '282'
+    - '1320'
+  - - '5998'
+    - A Regra do Jogo
+    - segunda, terca, quarta, quinta, sexta, sabado
+    - '21:20:00'
+    - 16 anos
+    - '282'
+    - '1120'
+  - - '6431'
+    - Domingao do Faustao
+    - domingo
+    - '17:31:00'
+    - 10 anos
+    - '282'
+    - '6666'
+  - - '7893'
+    - Fantastico
+    - domingo
+    - '21:00:00'
+    - 14 anos
+    - '830'
+    - '123'
+
+---
+filme:
+  columns:
+  - codigo_filme
+  - nome
+  - genero
+  records: 
+  - - '101'
+    - Todo mundo em Panico
+    - Comedia
+  - - '150'
+    - O senhor dos aneis
+    - Fantasia
+  - - '201'
+    - Piratas do Caribe
+    - Aventura
+  - - '301'
+    - A lagoa Azul
+    - Romance
+  - - '401'
+    - As vantagens de ser invisível
+    - Drama
+  - - '501'
+    - 007 Cassino Royale
+    - Acao
+  - - '601'
+    - Simplismente Acontece
+    - Romance
+  - - '701'
+    - Velozes e Furiosos
+    - Acao
+  - - '801'
+    - O Exorcista
+    - Terror
+  - - '901'
+    - Kill Bill
+    - Acao
+
+---
+reproduz:
+  columns:
+  - cod_prog
+  - cod_filme
+  - data_reproducao
+  records: 
+  - - '1231'
+    - '101'
+    - '2010-06-12'
+  - - '1231'
+    - '101'
+    - '2012-06-12'
+  - - '1231'
+    - '101'
+    - '2012-07-02'
+  - - '1231'
+    - '101'
+    - '2012-07-12'
+  - - '1231'
+    - '150'
+    - '1991-08-10'
+  - - '1231'
+    - '150'
+    - '2013-04-10'
+  - - '1231'
+    - '150'
+    - '2013-04-14'
+  - - '1231'
+    - '150'
+    - '2013-08-10'
+  - - '1231'
+    - '201'
+    - '1998-04-20'
+  - - '1231'
+    - '201'
+    - '1999-04-20'
+  - - '1231'
+    - '201'
+    - '1999-08-12'
+  - - '1231'
+    - '201'
+    - '1999-08-20'
+  - - '1231'
+    - '301'
+    - '2007-05-01'
+  - - '1231'
+    - '301'
+    - '2010-05-01'
+  - - '1231'
+    - '301'
+    - '2010-09-01'
+  - - '1231'
+    - '301'
+    - '2010-09-10'
+  - - '1231'
+    - '401'
+    - '2014-02-12'
+  - - '1231'
+    - '401'
+    - '2015-01-12'
+  - - '1231'
+    - '401'
+    - '2015-01-17'
+  - - '1231'
+    - '401'
+    - '2015-02-12'
+  - - '1231'
+    - '501'
+    - '2000-03-05'
+  - - '1231'
+    - '501'
+    - '2000-03-08'
+  - - '1231'
+    - '501'
+    - '2010-03-15'
+  - - '1231'
+    - '501'
+    - '2010-05-05'
+  - - '1231'
+    - '601'
+    - '2003-02-14'
+  - - '1231'
+    - '601'
+    - '2003-02-23'
+  - - '1231'
+    - '601'
+    - '2003-08-14'
+  - - '1231'
+    - '601'
+    - '2013-08-14'
+  - - '1231'
+    - '701'
+    - '2004-09-25'
+  - - '1231'
+    - '701'
+    - '2014-09-11'
+  - - '1231'
+    - '701'
+    - '2014-09-24'
+  - - '1231'
+    - '701'
+    - '2014-09-25'
+  - - '1231'
+    - '801'
+    - '2001-04-15'
+  - - '1231'
+    - '801'
+    - '2011-04-15'
+  - - '1231'
+    - '801'
+    - '2011-10-05'
+  - - '1231'
+    - '801'
+    - '2011-10-15'
+  - - '1231'
+    - '901'
+    - '2000-07-02'
+  - - '1231'
+    - '901'
+    - '2010-03-02'
+  - - '1231'
+    - '901'
+    - '2010-03-08'
+  - - '1231'
+    - '901'
+    - '2010-07-02'
+
+---
+bem:
+  columns:
+  - codigo_bem
+  - descricao_bem
+  - tipo_bem
+  records: 
+  - - '1001'
+    - Carro jornalismo
+    - Automovel
+  - - '2101'
+    - Camera HD
+    - Equipamento
+  - - '3510'
+    - Carro jornalismo
+    - Automovel
+  - - '4879'
+    - Micro Camera
+    - Equipamento
+  - - '5921'
+    - Jogo de luz
+    - Equipamento
+  - - '6521'
+    - Carro de cenario
+    - Automovel
+  - - '6842'
+    - Microfones de alta definicao
+    - Equipamento
+  - - '7953'
+    - Equipamento de audio
+    - Equipamento
+  - - '8664'
+    - Carro de transporte interno
+    - Automovel
+  - - '9423'
+    - Moto jornalismo
+    - Automovel
+
+---
+departamento:
+  columns:
+  - codigo_dep
+  - nome_dep
+  records: 
+  - - '100'
+    - FINANCEIRO
+  - - '200'
+    - COMERCIAL
+  - - '240'
+    - ESPORTES
+  - - '250'
+    - PRODUCAO
+  - - '280'
+    - GERENCIA
+  - - '282'
+    - ENTRETERIMENTO
+  - - '310'
+    - RH
+  - - '720'
+    - REDAcAO
+  - - '830'
+    - JORNALISMO
+  - - '870'
+    - FILMES
+  - - '871'
+    - ADMISTRATIVO
+
+---
+usa:
+  columns:
+  - cod_bem
+  - cod_dep
+  records: 
+  - - '1001'
+    - '830'
+  - - '2101'
+    - '250'
+  - - '2101'
+    - '282'
+  - - '2101'
+    - '830'
+  - - '3510'
+    - '830'
+  - - '4879'
+    - '250'
+  - - '4879'
+    - '282'
+  - - '4879'
+    - '830'
+  - - '5921'
+    - '250'
+  - - '5921'
+    - '282'
+  - - '6521'
+    - '250'
+  - - '6521'
+    - '282'
+  - - '6521'
+    - '870'
+  - - '6842'
+    - '250'
+  - - '6842'
+    - '282'
+  - - '6842'
+    - '830'
+  - - '7953'
+    - '250'
+  - - '7953'
+    - '282'
+  - - '7953'
+    - '830'
+  - - '8664'
+    - '100'
+  - - '8664'
+    - '200'
+  - - '8664'
+    - '240'
+  - - '8664'
+    - '250'
+  - - '8664'
+    - '280'
+  - - '8664'
+    - '282'
+  - - '8664'
+    - '310'
+  - - '8664'
+    - '720'
+  - - '8664'
+    - '830'
+  - - '8664'
+    - '870'
+  - - '8664'
+    - '871'
+  - - '9423'
+    - '830'
