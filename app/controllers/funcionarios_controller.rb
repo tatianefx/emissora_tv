@@ -17,6 +17,14 @@ class FuncionariosController < ApplicationController
   	@funcionario = Funcionario.new
   end
   
+  def the_best_salary
+    
+    @salario = Funcionario.maximum(:salario_fun)
+    @funcionario = Funcionario.select(:nome_fun, :salario_fun).where(:salario_fun =>  @salario).map(&:nome_fun)
+    render :json => @salario
+
+  end
+
   private
 
   def funcionario_params

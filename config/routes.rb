@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :funcionarios, only: [:index, :create, :new]
+  resources :funcionarios, only: [:index, :create, :new] do
+    get :the_best_salary, on: :collection
+  end
   resources :departamentos, only: [:index, :create, :new]
   resources :clientes, only: [:index, :create, :new]
 
