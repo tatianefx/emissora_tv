@@ -1,0 +1,33 @@
+<h1>Adicionar Funcionario</h1>
+
+<%= form_for @funcionario do |f| %>
+	<p>
+		<%= f.label :codigo %>
+		<%= f.text_field :codigo_fun %>
+	</p>
+	<p>
+		<%= f.label :nome %>
+		<%= f.text_field :nome_fun %>
+	</p>
+	<p>
+		<%= f.label :cpf %>
+		<%= f.text_field :cpf_fun %>
+	</p>
+	<p>
+		<%= f.label :data_nascimento %>
+		<%= f.text_field :data_nasc_fun %>
+	</p>
+	<p>
+		<%= f.label :salario %>
+		<%= f.text_field :salario_fun %>
+	</p>
+	<p>
+		<%= f.label :sexo %>
+		<%= f.text_field :sexo %>
+	</p>
+	<p>
+		<%= f.label :codigo_departamento %>
+		<%= f.text_field :cod_dep %>
+	</p>
+	<p><%= f.submit %></p>
+<% end %> 

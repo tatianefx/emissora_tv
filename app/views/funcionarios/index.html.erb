@@ -1,0 +1,30 @@
+<div class="panel panel-default">
+  <div class="panel-heading">FUNCIONÁRIOS</div>
+	<table  class="table table-hover">
+  	<tr>
+    	<th>codigo_fun</th>
+      <th>nome_fun</th>
+      <th>cpf_fun</th>
+      <th>data_nasc_fun</th>
+      <th>salario_fun</th>
+      <th>sexo</th>
+      <th>cod_dep</th>
+  	</tr>
+ 
+	<% @funcionarios.each do |funcionario| %>
+  	<tr>
+    	<td><%= funcionario.codigo_fun %></td>
+    	<td><%= funcionario.nome_fun %></td>
+      <td><%= funcionario.cpf_fun %></td>
+      <td><%= funcionario.data_nasc_fun %></td>
+      <td><%= funcionario.salario_fun %></td>
+      <td><%= funcionario.sexo %></td>
+      <td><%= funcionario.cod_dep %></td>
+  	</tr>
+	<% end %>
+</table>
+</div>
+
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <%= link_to 'Adicionar funcionario', new_funcionario_path %> 
+</button>

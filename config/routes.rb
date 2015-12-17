@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :funcionarios, only: [:index, :create, :new]
   resources :departamentos, only: [:index, :create, :new]
   resources :clientes, only: [:index, :create, :new]
 

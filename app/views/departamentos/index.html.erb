@@ -1,20 +1,21 @@
 <div class="panel panel-default">
   <div class="panel-heading">DEPARTAMENTOS</div>
 	<table  class="table table-hover">
-  	<tr>
-    	<th>codigo_dep</th>
-    	<th>nome_dep</th>
-  	</tr>
+    <tr>
+      <th>codigo_dep</th>
+      <th>nome_dep</th>
+    </tr>
  
-	<% @departamentos.each do |departamento| %>
-  	<tr>
-    	<td><%= departamento.codigo_dep %></td>
-    	<td><%= departamento.nome_dep %></td>
-  	</tr>
-	<% end %>
+  <% @departamentos.each do |departamento| %>
+    <tr>
+      <td><%= departamento.codigo_dep %></td>
+      <td><%= departamento.nome_dep %></td>
+    </tr>
+  <% end %>
 </table>
 </div>
 
 <button type="button" class="btn btn-default btn-lg">
   <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <%= link_to 'Criar departamento', new_departamento_path %> 
 </button>
+
